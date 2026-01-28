@@ -33,25 +33,40 @@ export const ABOUT = {
 };
 
 export const CERTIFICATES = [
-  // Add your certificates here.
-  // Example:
-  // {
-  //   id: "bangkit-ml-2024",
-  //   title: "Bangkit Academy — Machine Learning",
-  //   issuer: "Bangkit Academy",
-  //   year: "2024",
-  //   href: "https://...",
-  // }
+  {
+    id: "bangkit-2024-batch-2",
+    title: "Bangkit Academy 2024 — Batch 2 Certificate",
+    issuer: "Bangkit Academy",
+    year: "2024",
+    href: "/%5BBangkit%202024%20Batch%202%5D%20Certificate%20-%20M011B4KY4483.pdf",
+    description: "Credential ID: M011B4KY4483",
+  },
+  {
+    id: "certificate-1752404447983",
+    title: "HCIA-AI V3.5 Course (Indonesian)",
+    issuer: "Huawei Talent Online",
+    year: "2024",
+    href: "/1752404447983.jpg",
+    description: "Issued: 2024-06-22",
+  },
+  {
+    id: "certificate-1756404286999-1",
+    title: "Anaconda Python for Data Science — Professional Certificate",
+    issuer: "LinkedIn Learning × Anaconda",
+    year: "2025",
+    href: "/1756404286999%20(1).jpg",
+    description: "Completed: 2025-08-28",
+  },
 ];
 
 export const SKILL_CATEGORIES = [
   {
-    title: "Programming",
+    title: "Programming Languages",
     items: ["PHP", "Python", "C++"],
   },
   {
     title: "Web Programming",
-    items: ["Next.js", "React", "Tailwind CSS", "Laravel", "CodeIgniter"],
+    items: ["Next.js", "React", "Node.js", "REST APIs", "Tailwind CSS", "Laravel", "CodeIgniter"],
   },
   {
     title: "Machine Learning",
@@ -60,10 +75,6 @@ export const SKILL_CATEGORIES = [
   {
     title: "Data & Analytics",
     items: ["Python", "Pandas", "NumPy", "scikit-learn"],
-  },
-  {
-    title: "Backend & APIs",
-    items: ["Node.js", "FastAPI", "REST APIs"],
   },
   {
     title: "Databases",
@@ -82,30 +93,21 @@ export const SKILL_CATEGORIES = [
 
 export const PROJECTS = [
   {
-    id: "noteboost",
-    title: "NoteBoost",
-    subtitle: "AI-powered note-taking platform",
+    id: "Hanglekiu",
+    title: "Hanglekiu Dental Clinic Website",
+    subtitle: "Clinic website & booking",
     description:
-      "Intelligent capture and summarization with semantic search. Focus on retrieval efficiency & low-latency inference.",
-    tags: ["Python", "FastAPI", "Vector DB", "Tailwind"],
-    cta: { label: "Repository", href: "https://github.com/raythrp/NoteBoost.git", variant: "default" },
+      "Dynamic clinic website using Laravel & MySQL with online booking and patient management.",
+    tags: ["Laravel", "MySQL"],
+    cta: { label: "Repository", href: "https://github.com/isactofficial/HangLeKiuDental.git", variant: "default" },
   },
   {
     id: "ping",
-    title: "Ping! Tracker",
-    subtitle: "Street food discovery & nutrition",
+    title: "Ping! - Kaki Lima Tracking App Recommendation System",
+    subtitle: "Weather-aware street food recommender",
     description:
-      "Hybrid recommendation engine combining collaborative & content-based filtering for personalized suggestions.",
-    tags: ["Python", "TensorFlow", "RecSys", "GCP"],
+      "Personalized street-food recommendations based on weather, temperature, and user ratings.",
+    tags: ["Python", "scikit-learn", "TensorFlow", "Recommender System"],
     cta: { label: "Repository", href: "https://github.com/Bangkit-KakiLima/Bangkit-KakiLima-Main.git", variant: "default" },
-  },
-  {
-    id: "cluster",
-    title: "Image Clustering",
-    subtitle: "Visual grouping pipeline",
-    description:
-      "Applied unsupervised learning (K-Means + DBSCAN) for pattern grouping and anomaly spotting in image sets.",
-    tags: ["Streamlit", "scikit-learn", "DBSCAN", "K-Means"],
-    cta: { label: "Repository", href: "https://github.com/WAndalaluna/Clustering-web-app.git", variant: "default" },
-  },
+  }
 ];

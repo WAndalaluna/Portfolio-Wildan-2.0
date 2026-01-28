@@ -194,7 +194,7 @@ export default function Home() {
               >
                 {HERO.heading}
               </h1>
-              <h2 className="text-xl md:text-2xl font-medium text-cyan-400 mt-4 tracking-tight" aria-live="polite">
+              <h2 className="hero-kicker text-xl md:text-2xl mt-4" aria-live="polite">
                 {typewriterText}
               </h2>
               <p className="mt-6 text-lg text-[color:var(--color-text-dim)] max-w-xl leading-relaxed">{HERO.paragraph1}</p>
@@ -209,16 +209,17 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="order-1 md:order-2 flex justify-center">
-              <Image
-                src="/Foto_Formal.png"
-                alt="Wildan Andalaluna"
-                width={480}
-                height={640}
-                priority
-                sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, 320px"
-                className="rounded-2xl w-48 sm:w-56 md:w-80 h-auto border-4 border-cyan-500 shadow-xl shadow-cyan-500/20"
-              />
+            <div className="order-1 md:order-2 flex justify-center md:justify-end">
+              <div className="hero-photo-frame" aria-label="Profile photo">
+                <Image
+                  src="/Foto_Formal.png"
+                  alt="Wildan Andalaluna"
+                  fill
+                  priority
+                  sizes="(max-width: 640px) 320px, (max-width: 768px) 360px, 380px"
+                  className="hero-photo"
+                />
+              </div>
             </div>
           </div>
         </section>

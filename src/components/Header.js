@@ -22,7 +22,7 @@ export function Header({
             e.preventDefault();
             onNavigate("home");
           }}
-          className="text-xl md:text-2xl font-semibold tracking-tight text-[color:var(--color-text)] hover:text-cyan-500 transition-colors"
+          className="brand-mark text-xl md:text-2xl font-semibold tracking-tight transition-opacity hover:opacity-90"
         >
           {SITE.name}
         </a>

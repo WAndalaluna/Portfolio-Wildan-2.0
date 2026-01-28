@@ -1,6 +1,6 @@
 export function ProjectCard({ project }) {
   return (
-    <article className="project-card snap-center" aria-labelledby={`proj-${project.id}`} tabIndex={0}>
+    <article className="project-card snap-start" aria-labelledby={`proj-${project.id}`} tabIndex={0}>
       <h3 id={`proj-${project.id}`} className="project-title">
         {project.title}
       </h3>
