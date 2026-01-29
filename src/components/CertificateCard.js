@@ -1,9 +1,9 @@
 export function CertificateCard({ certificate }) {
   return (
     <li className="rounded-xl border border-[color:var(--panel-border)] bg-[color:var(--panel-bg)] p-4 sm:p-5 shadow-[0_10px_30px_rgba(15,23,42,0.10)] transition hover:-translate-y-0.5 hover:border-[color:var(--color-border-strong)]">
-      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4">
         <div className="min-w-0">
-          <h4 className="text-[color:var(--color-text)] font-semibold tracking-tight">
+          <h4 className="text-[color:var(--color-text)] font-semibold tracking-tight leading-snug">
             {certificate.title}
           </h4>
           <p className="mt-1 text-sm text-[color:var(--color-text-dim)]">
@@ -17,7 +17,7 @@ export function CertificateCard({ certificate }) {
             href={certificate.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-pill whitespace-nowrap self-start"
+            className="btn-pill whitespace-nowrap shrink-0 self-start sm:self-auto"
           >
             View
           </a>

@@ -239,7 +239,7 @@ export default function Home() {
           <div className="mt-14 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start">
             <div id="certificates" className="order-1 md:order-1 scroll-mt-28 text-left">
               <h3 className="text-xl font-semibold tracking-tight text-[color:var(--color-text)]">Certificates</h3>
-              <p className="mt-2 text-sm text-[color:var(--color-text-dim)]">Selected credentials and programs.</p>
+              {/* <p className="mt-2 text-sm text-[color:var(--color-text-dim)]">Selected credentials and programs.</p> */}
 
               {CERTIFICATES.length ? (
                 <ul className="mt-4 space-y-4" aria-label="Certificates">
@@ -254,7 +254,7 @@ export default function Home() {
 
             <div className="space-y-6 order-2 md:order-2 text-left">
               <h3 className="text-xl font-semibold tracking-tight text-[color:var(--color-text)]">Core Skills</h3>
-              <ul className="mt-2 grid gap-4 sm:grid-cols-2" aria-label="Core skill categories">
+              <ul className="mt-2 grid gap-4 sm:grid-cols-2 items-stretch" aria-label="Core skill categories">
                 {SKILL_CATEGORIES.map((category) => (
                   <SkillCategoryCard key={category.title} category={category} />
                 ))}
